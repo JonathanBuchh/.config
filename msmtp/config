@@ -1,0 +1,74 @@
+IMAPStore 1795962@fcpsschools.net-remote
+Host imap.gmail.com
+Port 993
+User 1795962@fcpsschools.net
+PassCmd "pass 1795962@fcpsschools.net"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/cert.pem
+
+MaildirStore 1795962@fcpsschools.net-local
+Subfolders Verbatim
+Path ~/.local/share/mail/1795962@fcpsschools.net/
+Inbox ~/.local/share/mail/1795962@fcpsschools.net/INBOX
+
+Channel 1795962@fcpsschools.net
+Expunge Both
+Far :1795962@fcpsschools.net-remote:
+Near :1795962@fcpsschools.net-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+IMAPStore jonathan.buchholz@icloud.com-remote
+Host imap.mail.me.com
+Port 993
+User jonathan.buchholz@icloud.com
+PassCmd "pass jonathan.buchholz@icloud.com"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/cert.pem
+
+MaildirStore jonathan.buchholz@icloud.com-local
+Subfolders Verbatim
+Path ~/.local/share/mail/jonathan.buchholz@icloud.com/
+Inbox ~/.local/share/mail/jonathan.buchholz@icloud.com/INBOX
+
+Channel jonathan.buchholz@icloud.com
+Expunge Both
+Far :jonathan.buchholz@icloud.com-remote:
+Near :jonathan.buchholz@icloud.com-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+IMAPStore tjmenscaptains@gmail.com-remote
+Host imap.gmail.com
+Port 993
+User tjmenscaptains@gmail.com
+PassCmd "pass tjmenscaptains@gmail.com"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/cert.pem
+
+MaildirStore tjmenscaptains@gmail.com-local
+Subfolders Verbatim
+Path ~/.local/share/mail/tjmenscaptains@gmail.com/
+Inbox ~/.local/share/mail/tjmenscaptains@gmail.com/INBOX
+
+Channel tjmenscaptains@gmail.com
+Expunge Both
+Far :tjmenscaptains@gmail.com-remote:
+Near :tjmenscaptains@gmail.com-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
